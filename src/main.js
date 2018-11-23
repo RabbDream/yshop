@@ -16,9 +16,19 @@
 import Vue from 'vue'
 import  App from './App.vue'
 import router from './router'
-
+import store from './store'
+import {Button} from 'mint-ui'
+import './mock/mockServer'
+import VueLazyload from 'vue-lazyload'
+import loading from './common/imgs/loading.gif'
+import './filters'
+Vue.component(Button.name,Button)
+Vue.use(VueLazyload, { // 内部自定义一个指令lazy
+  loading
+})
 new Vue({
   el:'#app',
   render:h => h(App),
-  router
+  router,  //使用vue-router
+  store   //使用vuex
 })

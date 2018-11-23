@@ -15,17 +15,18 @@
 </template>
 
 <script>
-    export default {
-      name: "HeaderTop",
-      props:{
-         title: String
-      },
-      data() {
-        return {}
-      },
-      components: {},
-      computed: {},
-      method: {},
+  export default {
+    name: "HeaderTop",
+    props:{
+      title: String
+    },
+    data() {
+      return {}
+    },
+    components: {},
+    computed: {
+    },
+    method: {},
     }
 </script>
 
@@ -58,7 +59,7 @@
     color #fff
     text-align center
   .header_title_text
-    font-size 20px
+    font-size 17px
     color #fff
     display block
   .header_login
